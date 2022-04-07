@@ -13,11 +13,11 @@
 	}
 	
 	*/
-	/* ================================================================================================================ */
+/* ================================================================================================================ */
 
-	/* /* &display=swap - дописываем если нету (когда используем подгрузку шрифтов через @import/link */
+/* /* &display=swap - дописываем если нету (когда используем подгрузку шрифтов через @import/link */
 
-	/* ================================================================================================================ */
+/* ================================================================================================================ */
 
 .wrapper {
 	min-height: 100%;
@@ -32,7 +32,7 @@
 	margin: 0 auto;
 }
 
-body{
+body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 900;
 	font-size: 42px;
@@ -40,11 +40,11 @@ body{
 }
 
 /* ==================================================================================================================== */
-.main{
+.main {
 	flex: 1 1 auto;
 }
 
-.header{
+.header {
 	background-color: #F2726F;
 	height: 100px;
 	display: flex;
@@ -52,7 +52,7 @@ body{
 	align-items: center;
 }
 
-.footer{
+.footer {
 	background-color: #5D62B5;
 	height: 100px;
 	display: flex;
@@ -66,51 +66,53 @@ body{
 
 
 
-.no-name{
+.no-name {
 	background-color: whitesmoke;
 	height: 300px;
 }
 
 
-.main__impact{
+.main__impact {
 	padding: 111px 0 212px 0;
 	background-color: #29C3BE;
 	position: relative;
 }
 
-.impact__container{
+.impact__container {
 	position: relative;
 }
 
-.impact__body::after{
+.impact__body::after {
 	content: "";
 	display: block;
 	width: 670px;
 	height: 280px;
-	background: url('../img/Blob.png') 0 0  no-repeat;
+	background: url('../img/Blob.png') 0 0 no-repeat;
 	position: absolute;
 	top: -111px;
 	right: -60px;
 }
 
-.impact__container >*:last-child {
+.impact__container>*:last-child {
 	margin-bottom: 0;
 }
 
 .impact__content {
 	margin-bottom: 75px;
 	display: flex;
+	flex-flow: row wrap;
 }
 
-.impact__content >*:last-child{
+.impact__content>*:last-child {
 	margin-bottom: 0;
+
 }
 
-.impact__body{
+.impact__body {
 	flex: 1 1 auto;
 }
 
-.impact__body > :last-child{
+.impact__body> :last-child {
 	margin-bottom: 0;
 }
 
@@ -123,7 +125,7 @@ body{
 }
 
 
-.impact__image img{
+.impact__image img {
 	max-width: 100%;
 }
 
@@ -139,12 +141,12 @@ body{
 	position: relative;
 }
 
-.impact__label::before{
+.impact__label::before {
 	content: "";
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url('../img/Overline.svg') 0 0  no-repeat;
+	background: url('../img/Overline.svg') 0 0 no-repeat;
 	position: absolute;
 	top: -2px;
 	left: -3px;
@@ -160,17 +162,20 @@ body{
 
 .imact__img {
 	border-radius: 40px;
-	}
+}
 
 .impact__stat {
 	display: flex;
 	margin-bottom: 30px;
+	flex-flow: row wrap;
+	row-gap: 20px;
 }
-.impact__block{
+
+.impact__block {
 	margin-right: 24px;
 }
 
-.impact__stat > :last-child{
+.impact__stat> :last-child {
 	margin-right: 0;
 }
 
@@ -185,17 +190,17 @@ body{
 	max-width: 76px;
 }
 
-.block__image img{
+.block__image img {
 	min-width: 100%;
 }
 
-.block__content{
+.block__content {
 	align-self: center;
 }
 
-.block__content > :last-child{
+.block__content> :last-child {
 	margin-bottom: 0;
-	
+
 }
 
 .block__numbers {
@@ -220,7 +225,7 @@ body{
 }
 
 
-.promise__container >*:last-child {
+.promise__container>*:last-child {
 	margin-bottom: 0;
 }
 
@@ -229,7 +234,7 @@ body{
 	margin-bottom: 68px;
 }
 
-.promise__top > :last-child{
+.promise__top> :last-child {
 	margin-bottom: 0;
 }
 
@@ -251,12 +256,26 @@ body{
 }
 
 .promise__cards {
-	display: flex;
 	margin-bottom: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	row-gap: 30px;
 }
 
+.promise__cards >:last-child {
+	margin-right: 0;
+}
 
-.card__body{
+.promise__card{
+	margin-right: 24px;
+}
+
+.card {
+	display: flex;
+	flex: 0 0 324px;
+}
+
+.card__body {
 	display: flex;
 }
 
@@ -272,12 +291,7 @@ body{
 }
 
 
-.card__content{
-	flex: 0 1 235px;
-}
-
-
-.card__content:last-child{
+.card__content>:last-child {
 	margin-bottom: 0;
 }
 
