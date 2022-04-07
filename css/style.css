@@ -1,0 +1,298 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+
+/* =================================================================================================================== */
+/* Если подключаем шрифты вручную */
+
+/* @font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	}
+	
+	*/
+	/* ================================================================================================================ */
+
+	/* /* &display=swap - дописываем если нету (когда используем подгрузку шрифтов через @import/link */
+
+	/* ================================================================================================================ */
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+[class*="__container"] {
+	margin: 0px auto;
+	max-width: 1022px;
+	margin: 0 auto;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 42px;
+	color: #ffff;
+}
+
+/* ==================================================================================================================== */
+.main{
+	flex: 1 1 auto;
+}
+
+.header{
+	background-color: #F2726F;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer{
+	background-color: #5D62B5;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* ==================================================================================================================== */
+
+
+
+.no-name{
+	background-color: whitesmoke;
+	height: 300px;
+}
+
+
+.main__impact{
+	padding: 111px 0 212px 0;
+	background-color: #29C3BE;
+	position: relative;
+}
+
+.impact__container{
+	position: relative;
+}
+
+.impact__body::after{
+	content: "";
+	display: block;
+	width: 670px;
+	height: 280px;
+	background: url('../img/Blob.png') 0 0  no-repeat;
+	position: absolute;
+	top: -111px;
+	right: -60px;
+}
+
+.impact__container >*:last-child {
+	margin-bottom: 0;
+}
+
+.impact__content {
+	margin-bottom: 75px;
+	display: flex;
+}
+
+.impact__content >*:last-child{
+	margin-bottom: 0;
+}
+
+.impact__body{
+	flex: 1 1 auto;
+}
+
+.impact__body > :last-child{
+	margin-bottom: 0;
+}
+
+
+.impact__image {
+	border-radius: 40px;
+	max-width: 498px;
+	margin-top: -191px;
+	position: relative;
+}
+
+
+.impact__image img{
+	max-width: 100%;
+}
+
+
+.impact__label {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 200%;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+	padding-left: 35px;
+	position: relative;
+}
+
+.impact__label::before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url('../img/Overline.svg') 0 0  no-repeat;
+	position: absolute;
+	top: -2px;
+	left: -3px;
+}
+
+.impact__title {
+	font-size: 36px;
+	line-height: 117%;
+	max-width: 411px;
+	margin-bottom: 32px;
+}
+
+
+.imact__img {
+	border-radius: 40px;
+	}
+
+.impact__stat {
+	display: flex;
+	margin-bottom: 30px;
+}
+.impact__block{
+	margin-right: 24px;
+}
+
+.impact__stat > :last-child{
+	margin-right: 0;
+}
+
+.block {
+	flex: 0 1 237px;
+	display: flex;
+}
+
+
+.block__image {
+	margin-right: 13px;
+	max-width: 76px;
+}
+
+.block__image img{
+	min-width: 100%;
+}
+
+.block__content{
+	align-self: center;
+}
+
+.block__content > :last-child{
+	margin-bottom: 0;
+	
+}
+
+.block__numbers {
+	font-size: 36px;
+	line-height: 117%;
+	margin-bottom: 3px;
+}
+
+.block__text {
+	color: #5D62B5;
+	letter-spacing: 0.15px;
+	line-height: 150%;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+/* ====================================================================================== */
+
+.main__promise {
+	padding: 121px 0;
+}
+
+
+.promise__container >*:last-child {
+	margin-bottom: 0;
+}
+
+
+.promise__top {
+	margin-bottom: 68px;
+}
+
+.promise__top > :last-child{
+	margin-bottom: 0;
+}
+
+.promise__label {
+	color: #5D62B5;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 200%;
+	margin-bottom: 33px;
+}
+
+.promise__title {
+	color: #000000;
+	line-height: 117%;
+	font-size: 36px;
+	margin-bottom: 33px;
+}
+
+.promise__cards {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+
+.card__body{
+	display: flex;
+}
+
+
+.card__img {
+	margin-right: 26px;
+	align-self: flex-start;
+	max-width: 63px;
+}
+
+.card__img img {
+	min-width: 100%;
+}
+
+
+.card__content{
+	flex: 0 1 235px;
+}
+
+
+.card__content:last-child{
+	margin-bottom: 0;
+}
+
+.card__title {
+	color: #F2726F;
+	line-height: 137%;
+	font-size: 19px;
+	margin-bottom: 20px;
+}
+
+.card__text {
+	color: #4B4B4B;
+	letter-spacing: 0.15px;
+	line-height: 150%;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
